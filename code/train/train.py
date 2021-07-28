@@ -23,7 +23,7 @@ def log_confusion_matrix_image(cm, labels, normalize=False, log_name='confusion_
     '''
     if normalize:
         cm = cm.astype('float') / cm.sum(axis = 1)[:, np.newaxis]
-        print('Normalized confusion matrix')
+        print('Normalized confusion matrix for test')
     else:
         print('Confusion matrix, without normalization')
     print(cm)
